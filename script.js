@@ -4,7 +4,7 @@ let backBtn = document.querySelector("#backBtn");
 let nextBtn = document.querySelector("#nextBtn");
 
 scroll.addEventListener("wheel", (evt) => {
-    evt.prevetDefault();
+    evt.preventDefault();
     scroll.style.scrollBehavior = "auto";
 
     scroll.scrollLeft += evt.deltaY;
